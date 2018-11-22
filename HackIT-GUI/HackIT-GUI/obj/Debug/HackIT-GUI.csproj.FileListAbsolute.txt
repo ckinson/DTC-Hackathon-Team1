@@ -1,0 +1,13 @@
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\bin\Debug\HackIT-GUI.exe.config
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\bin\Debug\HackIT-GUI.exe
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\bin\Debug\HackIT-GUI.pdb
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT-GUI.csprojAssemblyReference.cache
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT_GUI.Form1.resources
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT_GUI.Properties.Resources.resources
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT-GUI.csproj.GenerateResource.cache
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT-GUI.csproj.CoreCompileInputs.cache
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT-GUI.exe
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT-GUI.pdb
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\bin\Debug\AWSSDK.dll
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\bin\Debug\AWSSDK.pdb
+C:\Users\tony\source\repos\HackIT-GUI\HackIT-GUI\obj\Debug\HackIT-GUI.csproj.CopyComplete

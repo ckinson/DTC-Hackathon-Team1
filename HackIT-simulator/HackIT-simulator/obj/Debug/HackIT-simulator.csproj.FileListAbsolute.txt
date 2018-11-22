@@ -1,0 +1,13 @@
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\HackIT-simulator.exe.config
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\HackIT-simulator.exe
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\HackIT-simulator.pdb
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\obj\Debug\HackIT-simulator.csprojAssemblyReference.cache
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\obj\Debug\HackIT-simulator.csproj.CoreCompileInputs.cache
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\obj\Debug\HackIT-simulator.exe
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\obj\Debug\HackIT-simulator.pdb
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\Install.bat
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\Uninstall.bat
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\CombinedData.csv
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\AWSSDK.dll
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\bin\Debug\AWSSDK.pdb
+C:\Users\tony\source\repos\HackIT-simulator\HackIT-simulator\obj\Debug\HackIT-simulator.csproj.CopyComplete
