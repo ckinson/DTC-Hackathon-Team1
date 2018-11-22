@@ -31,6 +31,7 @@ namespace HackIT_GUI
             t.Interval = 1000;
             t.Enabled = true;
             t.Tick += new System.EventHandler(OnTimerEvent);
+             Data.fetchRecord();
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -49,13 +50,18 @@ namespace HackIT_GUI
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
 
-            Data.fetchRecord();
+            label1.Text = Data.fetchRecord();
 
         }
 
         private void OnTimerEvent(object sender, System.EventArgs e)
         {
             //Data.fetchRecord();
+        }
+
+        private void pnlMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

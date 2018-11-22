@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Amazon
+using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DocumentModel;
@@ -17,7 +17,7 @@ namespace HackIT_GUI
 {
     class Data
     {
-        public static void fetchRecord()
+        public static string fetchRecord()
         {
             try
             {
@@ -29,9 +29,12 @@ namespace HackIT_GUI
                 DateTime twoWeeksAgoDate = DateTime.UtcNow - TimeSpan.FromDays(15);
                 //RangeFilter filter = new RangeFilter(QueryOperator.GreaterThan, twoWeeksAgoDate);
                 //Search search = table.Query("DynamoDB Thread 2", filter);
+                return table;
+               
             }
             catch (Exception e)
             {
+                return null;
                 MessageBox.Show(e.ToString());
             }
 
@@ -44,10 +47,10 @@ namespace HackIT_GUI
             DateTime startDate = DateTime.UtcNow - TimeSpan.FromDays(30);
             DateTime endDate = DateTime.UtcNow - TimeSpan.FromDays(1);
 
-            IEnumerable<Reply> repliesInAPeriod = context.Query<Reply>(forumId,
-                                           QueryOperator.Between, startDate, endDate);
-            foreach (Reply r in repliesInAPeriod)
-                Console.WriteLine("{0}\t{1}\t{2}\t{3}", r.Id, r.PostedBy, r.Message, r.ReplyDateTime);
+           // IEnumerable<query> repliesInAPeriod = context.Query<Reply>(forumId,
+           //                                QueryOperator.Between, startDate, endDate);
+            //foreach (Reply r in repliesInAPeriod)
+             //   Console.WriteLine("{0}\t{1}\t{2}\t{3}", r.Id, r.PostedBy, r.Message, r.ReplyDateTime);
         }
 
     }
