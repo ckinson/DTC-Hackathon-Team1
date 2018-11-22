@@ -19,8 +19,8 @@ const Alexa = require('alexa-sdk');
 //Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
 const APP_ID = undefined;
 
-const SKILL_NAME = 'Autism Together';
-const HELP_MESSAGE = 'I can help you with possible health issues';
+const SKILL_NAME = 'Assistance';
+const HELP_MESSAGE = 'I can be used to give you a health check or notify your carer';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
@@ -50,6 +50,7 @@ const handlers = {
         const speechOutput = 'yes daddy work it';
         this.response.cardRenderer(SKILL_NAME);
         this.response.speak(speechOutput);
+        
         this.emit(':responseReady');
     },
     'notifyCarer': function () {
