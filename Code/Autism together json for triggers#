@@ -1,0 +1,103 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "assistance",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "woops",
+                        "oop",
+                        "doesn't matter",
+                        "stop",
+                        "forget it",
+                        "Nevermind"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "what can you do for me",
+                        "what do you do",
+                        "what can you do"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetHelp",
+                    "slots": [],
+                    "samples": [
+                        "should i worry",
+                        "i do not feel well",
+                        "i don't feel well",
+                        "i do not feel so good",
+                        "i don't feel so good",
+                        "i do not feel great",
+                        "i don't feel great",
+                        "i feel bad",
+                        "help",
+                        "should i be worried",
+                        "is everything alright",
+                        "is everything normal",
+                        "give me a rundown",
+                        "is this normal",
+                        "should i get help",
+                        "Do i need help"
+                    ]
+                },
+                {
+                    "name": "notifyCarer",
+                    "slots": [],
+                    "samples": [
+                        "i wish to speak to my carer",
+                        "i wish to speak with my carer",
+                        "i want to talk to my carer",
+                        "i want to talk with my carer",
+                        "call my carer",
+                        "call carer",
+                        "tell carer",
+                        "send to my carer",
+                        "tell my carer",
+                        "inform my carer",
+                        "send to carer",
+                        "send information to my carer",
+                        "notify carer",
+                        "notify my carer"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "notifyCarer",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.19682206119"
+                    },
+                    "slots": []
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.19682206119",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Are you sure you wish to notify your carer?"
+                    }
+                ]
+            }
+        ]
+    }
+}
