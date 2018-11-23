@@ -1,12 +1,3 @@
-/* eslint-disable  func-names */
-/* eslint quote-props: ["error", "consistent"]*/
-/**
- * This sample demonstrates a simple skill built with the Amazon Alexa Skills
- * nodejs skill development kit.
- * This sample supports multiple lauguages. (en-US, en-GB, de-DE).
- * The Intent Schema, Custom Slots and Sample Utterances for this skill, as well
- * as testing instructions are located at https://github.com/alexa/skill-sample-nodejs-fact
- **/
 
 'use strict';
 const Alexa = require('alexa-sdk');
@@ -20,7 +11,7 @@ const Alexa = require('alexa-sdk');
 const APP_ID = undefined;
 
 const SKILL_NAME = 'Assistance';
-const HELP_MESSAGE = 'I can be used to give you a health check or notify your carer';
+const HELP_MESSAGE = 'I can be used to give you a health check or contact your carer';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
@@ -29,14 +20,14 @@ const STOP_MESSAGE = 'Goodbye!';
 //=========================================================================================================================================
 
 
-//=========================================================================================================================================
-//Editing anything below this line might break your skill.
-//=========================================================================================================================================
 
+
+//event handlers from the utterences
 const handlers = {
     'LaunchRequest': function () {
         this.emit('AutismTogether');
     },
+    //when launching the skill, greet user
     'AutismTogether': function () {
 
         const speechOutput = 'Welcome to autism together. how can i help?';
@@ -45,21 +36,29 @@ const handlers = {
         
         this.emit(':responseReady');
     },
+    
+    //determine if the user requires assistance
     'GetHelp': function () {
-
-        const speechOutput = 'yes daddy work it';
+        
+        var chosenResponse = Math.random() < 0.5 ? "According to my latest data, i believe you should contact your carer" : "According to my latest data, i believe everything is fine.";
+        
+        const speechOutput = chosenResponse;
         this.response.cardRenderer(SKILL_NAME);
         this.response.speak(speechOutput);
         
         this.emit(':responseReady');
     },
+    
+    //this is the trigger for when you wish to contact your carer
     'notifyCarer': function () {
 
-        const speechOutput = 'carer will be notified';
+        const speechOutput = 'Contacting your carer';
         this.response.cardRenderer(SKILL_NAME);
         this.response.speak(speechOutput);
         this.emit(':responseReady');
     },
+    
+    //this is the function for help with the skill
     'AMAZON.HelpIntent': function () {
         const speechOutput = HELP_MESSAGE;
         const reprompt = HELP_REPROMPT;
@@ -67,12 +66,20 @@ const handlers = {
         this.response.speak(speechOutput).listen(reprompt);
         this.emit(':responseReady');
     },
+    
+     //thhe following 2 functions are used to can cel the use of the skill
     'AMAZON.CancelIntent': function () {
         this.response.speak(STOP_MESSAGE);
         this.emit(':responseReady');
     },
     'AMAZON.StopIntent': function () {
         this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
+    },
+    
+    //fallback intent
+        'AMAZON.FallbackIntent': function () {
+        this.response.speak("I don't recognise that command, sorry");
         this.emit(':responseReady');
     },
 };
